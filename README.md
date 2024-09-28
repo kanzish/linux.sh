@@ -70,6 +70,7 @@ You can now use `doas` to elevate your users permissions to install more stuff e
 - To install a graphical desktop, see: https://docs.alpinelinux.org/user-handbook/0.1a/Working/post-install.html
 
 # Bookmarks
+- https://wiki.alpinelinux.org/wiki/Alpine_Linux:FAQ
 - https://sahajsarup.com/a-tale-of-running-modern-linux-on-hardware-from-1997/
 
 # Todo
