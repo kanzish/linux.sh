@@ -1,11 +1,11 @@
-# Alpine Linux - Minimalist daily driver and universal operating system setup guide
+# Setup Guide - A hardcore minimal Alpine Linux environment for daily driving and embedded devices
 
-## Why Alpine Linux
+### Why Alpine Linux
 - Extremely lightweight
 - Fast, secure boot
 - Works on modern and ancient machines as well as edge and embedded devices
 
-## Cons
+### Cons
 - Uses musl not GNU
 - Some basic things like bluetooth and audio require much more setup
 
@@ -50,11 +50,25 @@ These are the exact steps I take when installing Alpine on a laptop or desktop I
   - Type `reboot` to finish and reboot the system 🎉
 
 # Step 2 - Setting up your main user
+We'll be using doas instead of sudo since it's more lightweight
 
-# Step 3 - Running the setup script
+- Login with your user
+- Switch to root environment with `su root` (you will now be in the root environment)
+- Install git with `apk add git`
+- Clone this repository with `git clone https://github.com/kanzish/setup`
+- Run the setup script with `sh setup/base.sh`
+- Copy config files to your users root `cp setup/.nanorc .nanorc`
+- Add your user to the root group `echo 'permit :wheel' > /etc/doas.d/doas.conf`
+- Exit the root environment with `exit`
+
+You can now use `doas` to elevate your users permissions to install more stuff etc.
+
+# Step 3 (optional) - Desktop, audio, etc
+- To install a graphical desktop, see: https://docs.alpinelinux.org/user-handbook/0.1a/Working/post-install.html
 
 # Bookmarks
 - https://sahajsarup.com/a-tale-of-running-modern-linux-on-hardware-from-1997/
 
 # Todo
 - Add screenshots
+- Automate setting up a user
