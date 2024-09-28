@@ -63,10 +63,12 @@ We'll be using doas instead of sudo since it's more lightweight
 
 You can now use `doas` to elevate your users permissions to install more stuff etc.
 
-# Step 4 Fonts
-- Edit `/etc/conf.d/consolefont` and set `consolefont=""` to your font eg `ter-132n.psf.gz`
 
-# Step 3 (optional) - Desktop, audio, etc
+# Step X
+- To set your font
+  - edit `/etc/conf.d/consolefont` and set `consolefont=""` to your font eg `ter-132n.psf.gz`
+  - set it with `setfont /usr/share/consolefonts/ter-132n.psf.gz`
+- To setup git with ssh, see: https://gist.github.com/xirixiz/b6b0c6f4917ce17a90e00f9b60566278
 - To install a graphical desktop, see: https://docs.alpinelinux.org/user-handbook/0.1a/Working/post-install.html
 
 # Bookmarks
