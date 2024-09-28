@@ -1,6 +1,6 @@
 # Core packages
 apk update
-apk add doas
+apk add doas pciutils
 apk add nano nano-syntax
 apk add curl tmux
 
