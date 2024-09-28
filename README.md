@@ -9,7 +9,7 @@
 - Uses musl not GNU
 - Some basic things like bluetooth and audio require much more setup
 
-# Installing Alpine Linux
+# Step 1 - Installing Alpine Linux
 **Time estimate:** 15-45min
 
 These are the exact steps I take when installing Alpine on a laptop or desktop I intend to use for work and play. Most of the time is spent waiting for the system to install and encrypt
@@ -48,6 +48,10 @@ These are the exact steps I take when installing Alpine on a laptop or desktop I
     - type harddrive encryption a third time to actually unlock the drive prior to installing
     - Wait for system to install
   - Type `reboot` to finish and reboot the system 🎉
+
+# Step 2 - Setting up your main user
+
+# Step 3 - Running the setup script
 
 # Bookmarks
 - https://sahajsarup.com/a-tale-of-running-modern-linux-on-hardware-from-1997/
