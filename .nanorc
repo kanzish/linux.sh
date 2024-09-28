@@ -1,0 +1,22 @@
+# Syntax highlighting
+include /usr/share/nano/default.nanorc
+include /usr/share/nano/sh.nanorc
+include /usr/share/nano/nanorc.nanorc
+include /usr/share/nano/xml.nanorc
+include /usr/share/nano/json.nanorc
+include /usr/share/nano/markdown.nanorc
+include /usr/share/nano/html.nanorc
+include /usr/share/nano/css.nanorc
+include /usr/share/nano/javascript.nanorc
+include /usr/share/nano/python.nanorc
+
+# UI
+set nohelp
+set mouse
+
+# Shortcuts
+bind Sh-M-d "{cut}{up}{paste}{up}" main
+bind M-d "{cut}{down}{paste}{up}" main
+
+# TODO
+# copy this file into user home if not already present
