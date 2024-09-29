@@ -1,13 +1,16 @@
 # Setup Guide - A hardcore minimal Alpine Linux environment for daily driving and embedded devices
 
-### Why Alpine Linux
-- Extremely lightweight
-- Fast, secure boot
-- Works on modern and ancient machines as well as edge and embedded devices
+This guide will walk you step by step through setting up a minmal but secure Linux environment with an AI copilot, along with basic tools for systems programming in C/C++
 
-### Cons
-- Uses musl not GNU
-- Some basic things like bluetooth and audio require much more setup
+
+### Why Alpine
+Alpine Linux was selected because it is extremely lightweight and can run on ancient computers, tiny embedded devices, and even emulated in the browser while still adaptable enough to be used as a daily driver
+
+### Things to note
+- Alpine uses Musl not GNU
+- This is a truly minimal setup, you'll still need to configure bluetooth, audio, etc
+
+
 
 # Step 1 - Installing Alpine Linux
 **Time estimate:** 15-45min
@@ -49,7 +52,11 @@ These are the exact steps I take when installing Alpine on a laptop or desktop I
     - Wait for system to install
   - Type `reboot` to finish and reboot the system 🎉
 
+
+
 # Step 2 - Setting up your main user
+**Time estimate:** 5-10min
+
 We'll be using doas instead of sudo since it's more lightweight
 
 - Login with your user
@@ -64,16 +71,33 @@ We'll be using doas instead of sudo since it's more lightweight
 You can now use `doas` to elevate your users permissions to install more stuff etc.
 
 
+
+# Step 3 - Download an AI copilot
+**Time estimate:** 15-30min
+
+We'll be using llama.cpp - https://github.com/ggerganov/llama.cpp
+
+- Clone the code with `git clone https://github.com/ggerganov/llama.cpp`
+- Change into the directoy and make it with `cd llama.cpp && make`
+- While building (takes a while), download a model (eg Llama 3.2 1B, Q8): https://huggingface.co/lmstudio-community/Llama-3.2-1B-Instruct-GGUF/tree/main
+- Then start a convo with `./llama-cli -m "path/to/model.gguf" -p "You are a helpful assistant." --conversation`
+
+
+
 # Step X
 - To set your font
   - edit `/etc/conf.d/consolefont` and set `consolefont=""` to your font eg `ter-132n.psf.gz`
   - set it with `setfont /usr/share/consolefonts/ter-132n.psf.gz`
-- To setup git with ssh, see: https://gist.github.com/xirixiz/b6b0c6f4917ce17a90e00f9b60566278
+- To configure Github to use your SSH key, see: https://gist.github.com/xirixiz/b6b0c6f4917ce17a90e00f9b60566278
 - To install a graphical desktop, see: https://docs.alpinelinux.org/user-handbook/0.1a/Working/post-install.html
+
+
 
 # Bookmarks
 - https://wiki.alpinelinux.org/wiki/Alpine_Linux:FAQ
 - https://sahajsarup.com/a-tale-of-running-modern-linux-on-hardware-from-1997/
+
+
 
 # Todo
 - Add screenshots
