@@ -1,0 +1,1 @@
+alias chat="~/projects/llama.cpp/llama-cli -m 'projects/llama.cpp/models/Llama-3.2-1B-Instruct-Q8_0.gguf' -p 'You are helpful assistant in an Alpine Linux BusyBox Ash shell (not Bash!).' --conversation"
