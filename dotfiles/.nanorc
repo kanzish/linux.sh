@@ -13,10 +13,9 @@ include /usr/share/nano/python.nanorc
 # UI
 set nohelp
 set mouse
+set tabstospaces
+set tabsize 4
 
 # Shortcuts
 bind Sh-M-d "{cut}{up}{paste}{up}" main
 bind M-d "{cut}{down}{paste}{up}" main
-
-# TODO
-# copy this file into user home if not already present

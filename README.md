@@ -64,7 +64,7 @@ We'll be using doas instead of sudo since it's more lightweight
 - Install git with `apk add git`
 - Clone this repository with `git clone https://github.com/kanzish/setup`
 - Run the setup script with `sh setup/base.sh`
-- Copy config files to your users root `cp setup/.nanorc .nanorc`
+- Copy config files to your users root `cp -r setup/dotconfig/* ~`
 - Add your user to the root group `echo 'permit :wheel' > /etc/doas.d/doas.conf`
 - Exit the root environment with `exit`
 
