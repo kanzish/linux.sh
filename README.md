@@ -94,8 +94,9 @@ We'll be using llama.cpp - https://github.com/ggerganov/llama.cpp
 
 
 # Bookmarks
-- https://wiki.alpinelinux.org/wiki/Alpine_Linux:FAQ
-- https://sahajsarup.com/a-tale-of-running-modern-linux-on-hardware-from-1997/
+- Better installing guide - https://linuxiac.com/how-to-install-alpine-linux/
+- Alpine FAQ - https://wiki.alpinelinux.org/wiki/Alpine_Linux:FAQ
+- Running on ancient computers - https://sahajsarup.com/a-tale-of-running-modern-linux-on-hardware-from-1997/
 
 
 
