@@ -10,6 +10,3 @@ fi
 export XDG_SESSION_TYPE=wayland
 export XDG_CURRENT_DESKTOP=sway
 export LIBSEAT_BACKEND=seatd
-
-# Sway fonts
-apk add font-dejavu

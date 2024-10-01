@@ -4,6 +4,7 @@
 # Desktop
 setup-desktop sway
 setup-devd udev
+apk add font-dejavu
 
 # Video
 apk add mesa-dri-gallium
