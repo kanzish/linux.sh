@@ -5,6 +5,7 @@
 setup-desktop sway
 setup-devd udev
 apk add font-dejavu
+apk add neovim
 
 # Video
 apk add mesa-dri-gallium

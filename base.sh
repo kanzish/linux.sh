@@ -2,7 +2,6 @@
 apk update
 apk add doas pciutils
 apk add build-base
-apk add nano nano-syntax
 apk add curl tmux
 
 # Git
