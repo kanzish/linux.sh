@@ -3,6 +3,8 @@ apk update
 apk add doas pciutils
 apk add build-base
 apk add curl tmux
+sh ./caps2esc.sh
+
 
 # Git
 apk add git
