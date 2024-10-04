@@ -10,6 +10,7 @@ sh ./caps2esc.sh
 # Git
 apk add git
 git config --global init.defaultBranch main
+git config pull.rebase true
 
 # Fonts
 apk add terminus-font
