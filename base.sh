@@ -5,11 +5,6 @@ apk add build-base
 apk add curl tmux
 sh ./caps2esc.sh
 
-# Power management
-apk add tlp
-rc-update add tlp
-rc-service tlp start
-
 # Git
 apk add git
 git config --global init.defaultBranch main
