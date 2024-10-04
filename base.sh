@@ -1,8 +1,10 @@
 # Core packages
 apk update
-apk add doas pciutils
+apk add doas pciutils kbd
 apk add build-base
 apk add curl tmux
+
+# Keyboard
 sh ./caps2esc.sh
 
 # Git
