@@ -27,6 +27,11 @@ apk add intel-media-driver
 apk add alsa-utils
 #alsamixer
 
+# Brightness control
+apk add brightnessctl
+adduser $USER video
+echo "ACTION==\"add\", SUBSYSTEM==\"backlight\", RUN+=\"/bin/chgrp video $sys$devpath/brightness\", RUN+=\"/bin/chmod g+w $sys$devpath/brightness\"" | sudo tee /etc/udev/rules.d/backlight.rules
+
 # Seat manager
 apk add seatd
 rc-update add seatd
