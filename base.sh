@@ -2,7 +2,7 @@
 apk update
 apk add doas pciutils kbd
 apk add build-base
-apk add curl tmux
+apk add bash curl tmux
 
 # Keyboard
 sh ./caps2esc.sh
